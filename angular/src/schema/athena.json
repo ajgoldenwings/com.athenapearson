@@ -16,10 +16,10 @@
         "imageSection": {
           "sectionId": "26c4c9da-f261-44f3-a930-1f0952971d4c",
           "images": [
-            { "link": "images/athena/1.jpg", "linkSm": "images/athena/1_sm.jpg" },
-            { "link": "images/athena/2.jpg", "linkSm": "images/athena/2_sm.jpg" },
-            { "link": "images/athena/3.jpg", "linkSm": "images/athena/3_sm.jpg" },
-            { "link": "images/athena/4.jpg", "linkSm": "images/athena/4_sm.jpg" }
+            { "link": "/images/athena/1.jpg", "linkSm": "/images/athena/1_sm.jpg" },
+            { "link": "/images/athena/2.jpg", "linkSm": "/images/athena/2_sm.jpg" },
+            { "link": "/images/athena/3.jpg", "linkSm": "/images/athena/3_sm.jpg" },
+            { "link": "/images/athena/4.jpg", "linkSm": "/images/athena/4_sm.jpg" }
           ]
         }
       },
