@@ -29,7 +29,6 @@ import { ButtonSectionComponent } from "./button-section/button-section.componen
     MainSocialAndContactSectionComponent,
     OfferSectionComponent,
     TextSectionComponent,
-    ButtonSectionComponent
 ]
 })
 export class SectionsComponent {
