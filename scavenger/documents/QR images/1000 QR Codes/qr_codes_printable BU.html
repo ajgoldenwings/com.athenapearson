@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000 QR Codes - Printable</title>
+    <style>
+        @page {
+            size: landscape;
+            margin: 0.5in;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 2px;
+            width: 100%;
+            max-width: 100%;
+        }
+
+        .qr-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .qr-code {
+            width: 100%;
+            height: auto;
+            max-width: 80px;
+            max-height: 80px;
+            object-fit: contain;
+        }
+
+        .qr-index {
+            font-size: 8px;
+            margin-top: 1px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        @media print {
+            img {
+                break-inside: avoid;
+            }
+
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+
+            .container {
+                gap: 1px;
+            }
+
+            .qr-code {
+                max-width: 70px;
+                max-height: 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- QR Codes will be generated here -->
+    </div>
+
+    <script>
+        // Generate 1000 QR codes cycling through 0_image.png to 16_image.png
+        const container = document.querySelector('.container');
+        const totalCodes = 1000;
+        const imageCount = 17; // 0 to 16 inclusive
+
+        for (let i = 0; i < totalCodes; i++) {
+            // Create container for QR code and index
+            const qrItem = document.createElement('div');
+            qrItem.className = 'qr-item';
+            
+            // Create the QR code image
+            const img = document.createElement('img');
+            
+            // Special case: use upstairs.png for the 300th QR code (index 299)
+            if (i === 300) {
+                img.src = 'upstairs.png';
+                img.alt = 'Upstairs QR Code';
+            } else {
+                const imageIndex = i % imageCount;
+                img.src = `${imageIndex}_image.png`;
+                img.alt = `QR Code ${i + 1}`;
+            }
+            
+            img.className = 'qr-code';
+            img.onerror = function () {
+                console.warn(`Failed to load image: ${this.src}`);
+                this.style.backgroundColor = '#f0f0f0';
+                this.style.border = '1px solid #ccc';
+            };
+            
+            // Create the index number
+            const indexLabel = document.createElement('div');
+            indexLabel.className = 'qr-index';
+            indexLabel.textContent = i;
+            
+            // Add both to the container
+            qrItem.appendChild(img);
+            qrItem.appendChild(indexLabel);
+            container.appendChild(qrItem);
+        }
+    </script>
+</body>
+
+</html>
