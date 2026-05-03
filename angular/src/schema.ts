@@ -23,6 +23,7 @@ export type PageHome = {
 export type Page = {
   pageId: string;
   name: string;
+  hideFromNav?: boolean | null;
   link?: string | null;
   pages?: Page[] | null;
   sections?: Section[] | null;
@@ -42,7 +43,8 @@ export type Section = {
 
 export type ButtonSection = {
   sectionId: string;
-  link: string | null
+  link: string | null;
+  openInNewTab?: boolean | null;
   text: string;
 }
 

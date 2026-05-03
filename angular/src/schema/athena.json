@@ -14,10 +14,22 @@
         "imageSection": {
           "sectionId": "26c4c9da-f261-44f3-a930-1f0952971d4c",
           "images": [
-            { "link": "/images/athena/1.jpg", "linkSm": "/images/athena/1_sm.jpg" },
-            { "link": "/images/athena/2.jpg", "linkSm": "/images/athena/2_sm.jpg" },
-            { "link": "/images/athena/3.jpg", "linkSm": "/images/athena/3_sm.jpg" },
-            { "link": "/images/athena/4.jpg", "linkSm": "/images/athena/4_sm.jpg" }
+            {
+              "link": "/images/athena/1.jpg",
+              "linkSm": "/images/athena/1_sm.jpg"
+            },
+            {
+              "link": "/images/athena/2.jpg",
+              "linkSm": "/images/athena/2_sm.jpg"
+            },
+            {
+              "link": "/images/athena/3.jpg",
+              "linkSm": "/images/athena/3_sm.jpg"
+            },
+            {
+              "link": "/images/athena/4.jpg",
+              "linkSm": "/images/athena/4_sm.jpg"
+            }
           ]
         }
       },
@@ -36,11 +48,242 @@
           "link": "https://www.instagram.com/athenazhaopearson",
           "text": "Instagram"
         }
+      },
+      {
+        "buttonSection": {
+          "sectionId": "a3f2e1d0-c4b5-4a67-89ab-cdef01234567",
+          "color": "primary",
+          "link": "/scavenger-hunt",
+          "openInNewTab": false,
+          "text": "Scavenger Hunt"
+        }
       }
     ]
   },
   "pages": [
-
+    {
+      "pageId": "b1c2d3e4-f5a6-7890-abcd-ef1234567890",
+      "name": "Scavenger Hunt",
+      "hideFromNav": true,
+      "link": "scavenger-hunt",
+      "sections": [
+        {
+          "mainCenteredSection": {
+            "sectionId": "c1d2e3f4-a5b6-7890-abcd-ef1234567891",
+            "text": "Scavenger Hunt",
+            "subText": "Alice in Wonderland — Athena's 1st Birthday"
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef1234567892",
+            "link": "https://athenapearson.com/athena.html",
+            "text": "Athena",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef1234567893",
+            "link": "https://athenapearson.com/balls.html",
+            "text": "Balls",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef1234567894",
+            "link": "https://athenapearson.com/cantsleep.html",
+            "text": "Can't Sleep",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef1234567895",
+            "link": "https://athenapearson.com/dog.html",
+            "text": "Dog",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef1234567896",
+            "link": "https://athenapearson.com/education.html",
+            "text": "Education",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef1234567897",
+            "link": "https://athenapearson.com/fun.html",
+            "text": "Fun",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef1234567898",
+            "link": "https://athenapearson.com/guilty.html",
+            "text": "Guilty",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef1234567899",
+            "link": "https://athenapearson.com/hangover.html",
+            "text": "Hangover",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef123456789a",
+            "link": "https://athenapearson.com/interesting.html",
+            "text": "Interesting",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef123456789b",
+            "link": "https://athenapearson.com/jackolantern.html",
+            "text": "Jack-O-Lantern",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef123456789c",
+            "link": "https://athenapearson.com/kitchen.html",
+            "text": "Kitchen",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef123456789d",
+            "link": "https://athenapearson.com/little.html",
+            "text": "Little",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef123456789e",
+            "link": "https://athenapearson.com/morning.html",
+            "text": "Morning",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef123456789f",
+            "link": "https://athenapearson.com/nofits.html",
+            "text": "No Fits",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a0",
+            "link": "https://athenapearson.com/out.html",
+            "text": "Out",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a1",
+            "link": "https://athenapearson.com/play.html",
+            "text": "Play",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a2",
+            "link": "https://athenapearson.com/quiet.html",
+            "text": "Quiet",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a3",
+            "link": "https://athenapearson.com/reading.html",
+            "text": "Reading",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a4",
+            "link": "https://athenapearson.com/sleep.html",
+            "text": "Sleep",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a5",
+            "link": "https://athenapearson.com/toy.html",
+            "text": "Toy",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a6",
+            "link": "https://athenapearson.com/upstairs.html",
+            "text": "Upstairs",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a7",
+            "link": "https://athenapearson.com/vase.html",
+            "text": "Vase",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a8",
+            "link": "https://athenapearson.com/walkingwind.html",
+            "text": "Walking Wind",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678a9",
+            "link": "https://athenapearson.com/xmas.html",
+            "text": "Xmas",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678aa",
+            "link": "https://athenapearson.com/yeararoundthesun.html",
+            "text": "Year Around the Sun",
+            "openInNewTab": false
+          }
+        },
+        {
+          "buttonSection": {
+            "sectionId": "d1e2f3a4-b5c6-7890-abcd-ef12345678ab",
+            "link": "https://athenapearson.com/zzz.html",
+            "text": "Zzz",
+            "openInNewTab": false
+          }
+        }
+      ]
+    }
   ],
   "themeDark": "business",
   "themeDefault": "cmyk",
