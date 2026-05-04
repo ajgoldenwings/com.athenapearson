@@ -6,6 +6,7 @@ using Amazon.CDK.AWS.Route53;
 using Amazon.CDK.AWS.Route53.Targets;
 using Amazon.CDK.AWS.S3;
 using Constructs;
+using System.Linq;
 
 namespace Infrastructure.Constructs
 {
