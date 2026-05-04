@@ -54,7 +54,7 @@ namespace Infrastructure.Constructs
                     {
                         ContentSecurityPolicy = new ResponseHeadersContentSecurityPolicy
                         {
-                            ContentSecurityPolicy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://cognito-idp.us-east-1.amazonaws.com https://www.google-analytics.com https://www.googletagmanager.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self' data:; frame-src https://www.youtube.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';",
+                            ContentSecurityPolicy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://cognito-idp.us-east-1.amazonaws.com https://www.google-analytics.com https://www.googletagmanager.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' data:; frame-src https://www.youtube.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';",
                             Override = true
                         },
                         StrictTransportSecurity = new ResponseHeadersStrictTransportSecurity
