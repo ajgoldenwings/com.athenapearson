@@ -22,8 +22,7 @@ namespace Infrastructure.Constructs
                 new BucketDeploymentProps
                 {
                     Sources = [
-                        Source.Asset("./dist/browser"),
-                        Source.Asset("./scavenger")
+                        Source.Asset("./dist/browser")
                     ],
                     DestinationBucket = props.Bucket,
                     Distribution = props.distribution,
