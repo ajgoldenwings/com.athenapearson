@@ -21,7 +21,7 @@ namespace Infrastructure
 
             var stackName = new string(name.Where(char.IsLetterOrDigit).ToArray());
 
-            new InfrastructureStack(app, "InfrastructureStack", new InfrastructureStackProps
+            new InfrastructureStack(app, "Infrastructure-Stack-Id-" + stackName, new InfrastructureStackProps
             {
                 DomainName = name,
                 Env = new Amazon.CDK.Environment
@@ -29,7 +29,7 @@ namespace Infrastructure
                     Account = string.IsNullOrEmpty(account) ? System.Environment.GetEnvironmentVariable("CDK_DEFAULT_ACCOUNT") : account,
                     Region = string.IsNullOrEmpty(region) ? System.Environment.GetEnvironmentVariable("CDK_DEFAULT_REGION") : region,
                 },
-                Name = "InfrastructureStack-" + stackName,
+                Name = "Infrastructure-Stack-Name-" + stackName,
             });
             app.Synth();
         }
@@ -46,6 +46,11 @@ namespace Infrastructure
             if (!Directory.Exists("./dist"))
             {
                 throw new FileNotFoundException("The folder './dist' does not exist. Contents in this file are copied into a s3 Bucket.");
+            }
+
+            if (!Directory.Exists("./scavenger"))
+            {
+                throw new FileNotFoundException("The folder './scavenger' does not exist. Contents in this folder are copied into the s3 Bucket.");
             }
         }
     }
