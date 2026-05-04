@@ -54,7 +54,7 @@ namespace Infrastructure.Constructs
                     {
                         ContentSecurityPolicy = new ResponseHeadersContentSecurityPolicy
                         {
-                            ContentSecurityPolicy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com; connect-src 'self' https://cognito-idp.us-east-1.amazonaws.com https://www.google-analytics.com https://www.googletagmanager.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net; font-src 'self' data:; frame-src https://www.youtube.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';",
+                            ContentSecurityPolicy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://cdn.jsdelivr.net; connect-src 'self' https://cognito-idp.us-east-1.amazonaws.com https://www.google-analytics.com https://www.googletagmanager.com; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com; font-src 'self' data: https://fonts.gstatic.com; frame-src https://www.youtube.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';",
                             Override = true
                         },
                         StrictTransportSecurity = new ResponseHeadersStrictTransportSecurity
@@ -128,8 +128,8 @@ namespace Infrastructure.Constructs
                     },
                     ErrorResponses =
                     [
-                        new ErrorResponse { HttpStatus = 403, ResponsePagePath = "/index.html", ResponseHttpStatus = 403, Ttl = Duration.Minutes(0) },
-                        new ErrorResponse { HttpStatus = 404, ResponsePagePath = "/index.html", ResponseHttpStatus = 404, Ttl = Duration.Minutes(0) }
+                        new ErrorResponse { HttpStatus = 403, ResponsePagePath = "/index.html", ResponseHttpStatus = 200, Ttl = Duration.Minutes(0) },
+                        new ErrorResponse { HttpStatus = 404, ResponsePagePath = "/index.html", ResponseHttpStatus = 200, Ttl = Duration.Minutes(0) }
                     ],
                     PriceClass = PriceClass.PRICE_CLASS_100, // USA, Canada, Europe, & Israel
                     Enabled = true,
